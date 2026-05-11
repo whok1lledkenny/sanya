@@ -85,7 +85,7 @@ export default function MasterSeverLanding() {
 
           <button
             onClick={() => setIsModalOpen(true)}
-            className="hidden sm:block bg-[#00D4FF] hover:bg-[#99EDFE] text-[#243988] font-bold px-6 py-3 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-cyan-300/40"
+            className="bg-[#00D4FF] hover:bg-[#99EDFE] text-[#243988] font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-cyan-300/40 text-sm sm:text-base whitespace-nowrap"
           >
             Оставить заявку
           </button>

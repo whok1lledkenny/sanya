@@ -94,7 +94,7 @@ export default function MasterSeverLanding() {
 
       {/* Hero */}
       <section className="hero-bg min-h-screen flex items-center relative pt-24">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#243988]/95 to-[#243988]/70"></div>
+        <div className="absolute inset-0 bg-[#243988]/5"></div>
 
         <div className="relative max-w-7xl mx-auto px-8 lg:px-12 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center w-full">
           <div>

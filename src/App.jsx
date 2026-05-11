@@ -561,7 +561,7 @@ export default function MasterSeverLanding() {
             <div className="space-y-4 text-white/70">
               <p>+7 (999) 123-45-67</p>
               <p>info@mastersever.ru</p>
-              <p>г. Москва, ул. Примерная, 15</p>
+              <p></p>
             </div>
           </div>
 
@@ -580,7 +580,7 @@ export default function MasterSeverLanding() {
 
         <div className="max-w-7xl mx-auto px-8 lg:px-12 mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-white/50 text-sm">
           <p>© 2026 Мастер Север. Все права защищены.</p>
-          <p>Разработка и дизайн landing page</p>
+          <p></p>
         </div>
       </footer>
 

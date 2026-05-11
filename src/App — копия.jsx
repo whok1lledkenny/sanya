@@ -8,41 +8,6 @@ export default function MasterSeverLanding() {
     phone: ''
   });
 
-  const reviews = [
-    {
-      name: 'Александр',
-      service: 'Установка кондиционера',
-      text: 'Быстро приехали, аккуратно установили и помогли подобрать модель под квартиру.'
-    },
-    {
-      name: 'Марина',
-      service: 'Монтаж в офисе',
-      text: 'Все сделали за один день. Работает тихо, после монтажа оставили чистоту.'
-    },
-    {
-      name: 'Игорь',
-      service: 'Обслуживание системы',
-      text: 'Почистили кондиционер и устранили неприятный запах. Очень доволен сервисом.'
-    },
-    {
-      name: 'Елена',
-      service: 'Подбор оборудования',
-      text: 'Помогли выбрать кондиционер под бюджет и площадь квартиры. Спасибо за консультацию.'
-    }
-  ];
-
-  const [currentReview, setCurrentReview] = useState(0);
-
-  const nextReview = () => {
-    setCurrentReview((prev) => (prev + 1) % reviews.length);
-  };
-
-  const prevReview = () => {
-    setCurrentReview((prev) =>
-      prev === 0 ? reviews.length - 1 : prev - 1
-    );
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -89,18 +54,6 @@ export default function MasterSeverLanding() {
         .glass {
           backdrop-filter: blur(10px);
           background: rgba(255,255,255,0.08);
-        }
-        
-        @keyframes fade {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
         }
       `}</style>
 
@@ -353,64 +306,16 @@ export default function MasterSeverLanding() {
                 style={{ backgroundImage: "url('/back.png')" }}
               >
                 <div className="h-full w-full bg-[#243988]/70 flex items-end p-10">
-  <div className="glass rounded-3xl p-8 border border-white/10 w-full relative overflow-hidden">
+                  <div className="glass rounded-3xl p-8 border border-white/10 w-full">
+                    <div className="text-[#00D4FF] text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                      98%
+                    </div>
 
-    <h3 className="text-[#00D4FF] text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10">
-      Отзывы
-    </h3>
-
-    <button
-      onClick={prevReview}
-      className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 text-white text-2xl backdrop-blur"
-    >
-      ←
-    </button>
-
-    <button
-      onClick={nextReview}
-      className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 text-white text-2xl backdrop-blur"
-    >
-      →
-    </button>
-
-    <div
-      key={currentReview}
-      className="transition-all duration-500 animate-[fade_0.5s_ease] flex flex-col items-center justify-center text-center min-h-[260px] px-12"
-    >
-      <div className="text-[#00D4FF] text-2xl mb-4">
-        ★★★★★
-      </div>
-
-      <p className="text-white text-lg sm:text-xl leading-relaxed max-w-xl mb-8">
-        {reviews[currentReview].text}
-      </p>
-
-      <div>
-        <h4 className="text-white font-bold text-2xl mb-2">
-          {reviews[currentReview].name}
-        </h4>
-
-        <p className="text-white/60 text-sm uppercase tracking-[0.2em]">
-          {reviews[currentReview].service}
-        </p>
-      </div>
-    </div>
-
-    <div className="flex items-center justify-center gap-2 mt-8">
-      {reviews.map((_, index) => (
-        <div
-          key={index}
-          className={`h-2 rounded-full transition-all duration-300 ${
-            currentReview === index
-              ? 'w-8 bg-[#00D4FF]'
-              : 'w-2 bg-white/30'
-          }`}
-        ></div>
-      ))}
-    </div>
-
-  </div>
-</div>
+                    <p className="text-white text-xl leading-relaxed">
+                      клиентов рекомендуют нас своим друзьям и знакомым.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -561,7 +466,7 @@ export default function MasterSeverLanding() {
             <div className="space-y-4 text-white/70">
               <p>+7 (999) 123-45-67</p>
               <p>info@mastersever.ru</p>
-              <p>г. Москва, ул. Примерная, 15</p>
+              <p>АДРЕС МОЖНО СЮДА</p>
             </div>
           </div>
 
@@ -580,7 +485,7 @@ export default function MasterSeverLanding() {
 
         <div className="max-w-7xl mx-auto px-8 lg:px-12 mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-white/50 text-sm">
           <p>© 2026 Мастер Север. Все права защищены.</p>
-          <p>Разработка и дизайн landing page</p>
+          <p></p>
         </div>
       </footer>
 

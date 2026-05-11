@@ -310,7 +310,7 @@ export default function MasterSeverLanding() {
 
       {/* Advantages */}
       <section id="advantages" className="py-28 bg-[#f7fbff]">
-        <div className="max-w-7xl mx-auto px-8 lg:px-12 grid lg:grid-cols-2 gap-20 items-center">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center overflow-hidden">
           <div>
             <div className="text-[#00D4FF] font-bold uppercase tracking-[0.2em] mb-4">
               Почему мы
@@ -349,11 +349,11 @@ export default function MasterSeverLanding() {
 
             <div className="relative bg-[#243988] rounded-[40px] overflow-hidden shadow-2xl">
               <div
-                className="h-[550px] bg-cover bg-center"
+                className="min-h-[420px] sm:h-[550px] bg-cover bg-center"
                 style={{ backgroundImage: "url('/back.png')" }}
               >
-                <div className="h-full w-full bg-[#243988]/70 flex items-end p-10">
-  <div className="glass rounded-3xl p-8 border border-white/10 w-full relative overflow-hidden">
+                <div className="h-full w-full bg-[#243988]/70 flex items-end p-4 sm:p-10">
+  <div className="glass rounded-3xl p-5 sm:p-8 border border-white/10 w-full relative overflow-hidden">
 
     <h3 className="text-[#00D4FF] text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10">
       Отзывы
@@ -361,21 +361,21 @@ export default function MasterSeverLanding() {
 
     <button
       onClick={prevReview}
-      className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 text-white text-2xl backdrop-blur"
+      className="absolute left-1 sm:left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 text-white text-2xl backdrop-blur"
     >
       ←
     </button>
 
     <button
       onClick={nextReview}
-      className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 text-white text-2xl backdrop-blur"
+      className="absolute right-1 sm:right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 text-white text-2xl backdrop-blur"
     >
       →
     </button>
 
     <div
       key={currentReview}
-      className="transition-all duration-500 animate-[fade_0.5s_ease] flex flex-col items-center justify-center text-center min-h-[260px] px-12"
+      className="transition-all duration-500 animate-[fade_0.5s_ease] flex flex-col items-center justify-center text-center min-h-[260px] px-10 sm:px-12"
     >
       <div className="text-[#00D4FF] text-2xl mb-4">
         ★★★★★
